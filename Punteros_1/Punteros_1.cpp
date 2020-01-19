@@ -9,11 +9,11 @@ using namespace std;
 
 
 
-int main()
+int  main()
 {
  
     int numero = 45; // declaracion de la variable
-    int* puntero; // declaracion de una variable puntero
+    int* puntero; // declaracion de una variable puntero tiene que ser del mismo tipo que la origen
 
     puntero = &numero; // se almacena la dirección de la variable en el puntero
     
