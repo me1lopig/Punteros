@@ -1,5 +1,5 @@
 // Arrays_punteros.cpp : 
-// uso de arrays mediante punteros
+// uso de arrays mediante puntero
 // determinar los valores pares en un arreglo
 //
 
