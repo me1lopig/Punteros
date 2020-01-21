@@ -10,28 +10,30 @@
 
 using namespace std;
 
-
+// declaracion de variables
 int numcal; // numero de calificaciones
 int* calif; // puntero que vamos a usar para el array dinamico
 
 
+// declaracion de funciones
 void pedirnotas(); // funcion para pedir notas
 void mostrarnotas(); // mostramos las notas del arrglo
-
+void limpiar(); // limpia memoria
+void parada(); 
 
 
 int main()
 {
+    // todo funciones
     
     pedirnotas(); 
 
     mostrarnotas();
 
-    delete[] calif;// borramos la memoria ocupada
+    limpiar();
 
-    // parada antes de cerrar
-    cout << "\nPulsa una tecla para terminar";
-    cin.get();
+    parada();
+
     return 0;
 }
 
@@ -60,5 +62,21 @@ void mostrarnotas()
     {
         cout << "La nota " << i + 1 << " tiene un valor de "<<calif[i]<<endl;
     
-   }
+    }
+}
+
+void limpiar()
+{
+    cout << "Memoria limpiada " << endl;
+    delete[] calif;// borramos la memoria ocupada
+
+}
+
+
+void parada()
+{
+    // parada antes de cerrar
+    cout << "\nPulsa una tecla para terminar";
+    cin.get();
+    
 }
