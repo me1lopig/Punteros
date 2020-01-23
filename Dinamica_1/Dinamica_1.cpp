@@ -5,14 +5,15 @@
 //
 
 #include <iostream>
-#include<stdlib.h>
+#include<stdlib.h> // libreria para el uso dinamico de memoria
 
 
 using namespace std;
 
-// declaracion de variables
+// declaracion de variables globales
 int numcal; // numero de calificaciones
-int* calif; // puntero que vamos a usar para el array dinamico
+int* calif; // puntero que vamos a usar como array dinamico
+
 
 
 // declaracion de funciones
@@ -24,7 +25,7 @@ void parada();
 
 int main()
 {
-    // todo funciones
+    // todos los comandos se agrupan en funciones
     
     pedirnotas(); 
 
@@ -51,8 +52,7 @@ void pedirnotas()
     for (int i = 0; i < numcal; i++)
     {
         cout << "Ingresa la nota " << i+1 << endl;
-        cin >> calif[i];
-        
+        cin >> calif[i];      
     }
 }
 
@@ -61,15 +61,14 @@ void mostrarnotas()
     for (int i = 0; i < numcal; i++)
     {
         cout << "La nota " << i + 1 << " tiene un valor de "<<calif[i]<<endl;
-    
     }
 }
+
 
 void limpiar()
 {
     cout << "Memoria limpiada " << endl;
     delete[] calif;// borramos la memoria ocupada
-
 }
 
 
@@ -77,6 +76,5 @@ void parada()
 {
     // parada antes de cerrar
     cout << "\nPulsa una tecla para terminar";
-    cin.get();
-    
+    cin.get();  
 }
