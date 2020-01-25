@@ -1,4 +1,5 @@
-// Busqueda.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// Busqueda.cpp 
+// busqueda de un elemento en un vector definido de forma dinamica
 //
 
 #include <iostream>
@@ -25,6 +26,9 @@ int main()
     introducir_datos();
     cout << "Elemento a buscar "; cin >> elemento;
     buscar(datos,long_datos,elemento);
+
+
+    delete[] datos;// borrado de la matriz dinamica
 
     // parada
     cout << "Pulsa una tecla" << endl;
