@@ -42,7 +42,7 @@ int main()
 
 void introducir_datos()
 {
-    // introduce el numero de datos
+    // introduce el numero de datos del vector 
     cout << "Numero de datos del vector ";
     cin >> long_datos;
 
@@ -59,6 +59,7 @@ void introducir_datos()
 
 void buscar(int* array, int dimension, int elem)
 {
+    // busqueda de un elemento en un vector 
     int indice;
 
     for (int i = 0; i < dimension; i++)
