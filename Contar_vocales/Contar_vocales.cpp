@@ -2,10 +2,12 @@
 // contar el nuemero de vocales de un nombre
 // se ha usado asignacion dinamina del array de caracteres no muy ortodoxa
 
+#pragma warning(disable : 4996) //desactiva el error 4996 en tiempo de ejecución
 
 #include <iostream>
 #include<stdlib.h>
 #include<limits>
+#include<string>
 
 
 
@@ -45,7 +47,9 @@ int main()
 
 void introducir_datos()
 {
+    // se introduce la cadema del nombre y se pasa a mayuscula
     // introduce el numero de datos del vector 
+
     cout << "Extension del nombre ";
     cin >> long_datos;
 
@@ -59,7 +63,10 @@ void introducir_datos()
 
     cout << "Introduce el nonbre ";
     cin.getline(datos, long_datos, '\n');
+    
+    strupr(datos); // pasamos la cadena a mayusculas 
 }
+
 
 void buscar_vocales(char* nombre,int dim)
 {
@@ -69,11 +76,7 @@ void buscar_vocales(char* nombre,int dim)
     {
         switch (*(nombre+i))
         {
-        case 'a':
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u':
+
         case 'A':
         case 'E':
         case 'I':
