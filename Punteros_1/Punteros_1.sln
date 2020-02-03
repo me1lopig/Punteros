@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Busqueda", "..\Busqueda\Bus
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Contar_vocales", "..\Contar_vocales\Contar_vocales.vcxproj", "{F0120A10-8FA9-4E10-8857-AEDB276AB19F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Contar_vocales_2", "..\Contar_vocales_2\Contar_vocales_2.vcxproj", "{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{F0120A10-8FA9-4E10-8857-AEDB276AB19F}.Release|x64.Build.0 = Release|x64
 		{F0120A10-8FA9-4E10-8857-AEDB276AB19F}.Release|x86.ActiveCfg = Release|Win32
 		{F0120A10-8FA9-4E10-8857-AEDB276AB19F}.Release|x86.Build.0 = Release|Win32
+		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Debug|x64.ActiveCfg = Debug|x64
+		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Debug|x64.Build.0 = Debug|x64
+		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Debug|x86.ActiveCfg = Debug|Win32
+		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Debug|x86.Build.0 = Debug|Win32
+		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Release|x64.ActiveCfg = Release|x64
+		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Release|x64.Build.0 = Release|x64
+		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Release|x86.ActiveCfg = Release|Win32
+		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

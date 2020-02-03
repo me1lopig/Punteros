@@ -1,6 +1,8 @@
-// Contar_vocales.cpp 
-// contar el nuemero de vocales de un nombre
-// se ha usado asignacion dinamina del array de caracteres no muy ortodoxa
+// Contar_vocales_2.cpp 
+// contar los distintos tipos de vocales
+// dar los valores de cada uno de los tipos
+//
+
 
 #pragma warning(disable : 4996) //desactiva el error 4996 en tiempo de ejecución
 
@@ -16,7 +18,7 @@ using namespace std;
 // declaracion de variables globales
 int long_datos; // numero de elementos del vector
 char* datos; // arreglo en que vamos a ordenar
-int n_vocales=0; // numero de vocales
+int a = 0,e = 0,i = 0,o = 0,u=0; // numero de vocales
 
 
 
@@ -29,8 +31,8 @@ int main()
 {
 
     // Llamada a las funciones
-     introducir_datos();
-     buscar_vocales(datos,long_datos);
+    introducir_datos();
+    buscar_vocales(datos, long_datos);
 
 
     delete[] datos;// borrado de la matriz dinamica
@@ -54,7 +56,7 @@ void introducir_datos()
     cin >> long_datos;
 
     // borrado del buffer 
-    cin.clear(); 
+    cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 
@@ -63,26 +65,34 @@ void introducir_datos()
 
     cout << "Introduce el nonbre ";
     cin.getline(datos, long_datos, '\n');
-    
+
     strupr(datos); // pasamos la cadena a mayusculas 
 }
 
 
-void buscar_vocales(char* nombre,int dim)
+void buscar_vocales(char* nombre, int dim)
 {
     // funcion para la busqueda de vocales
-    
-    for (int i = 0; i < dim; i++)
+
+    for (int j = 0; j < dim; j++)  // ojo con los nombres de las variables que no coincidan
     {
-        switch (*(nombre+i))
+        switch (*(nombre + j))
         {
 
         case 'A':
+            a++;
+            break;
         case 'E':
+            e++;
+            break;
         case 'I':
+            i++;
+            break;
         case 'O':
+            o++;
+            break;
         case 'U':
-            n_vocales++;
+            u++;
             break;
 
         default:
@@ -90,5 +100,9 @@ void buscar_vocales(char* nombre,int dim)
         }
     }
 
-    cout << "El numero de vocales es " << n_vocales << endl;
+    cout << "El numero de vocales a  es " << a << endl;
+    cout << "El numero de vocales e  es " << e << endl;
+    cout << "El numero de vocales i  es " << i << endl;
+    cout << "El numero de vocales o  es " << o << endl;
+    cout << "El numero de vocales u  es " << u << endl;
 }
