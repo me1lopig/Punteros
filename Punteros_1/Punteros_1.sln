@@ -29,6 +29,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Contar_vocales", "..\Contar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Contar_vocales_2", "..\Contar_vocales_2\Contar_vocales_2.vcxproj", "{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matriz_dinamica", "..\Matriz_dinamica\Matriz_dinamica.vcxproj", "{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Suma_dinamica", "..\Suma_dinamica\Suma_dinamica.vcxproj", "{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +145,22 @@ Global
 		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Release|x64.Build.0 = Release|x64
 		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Release|x86.ActiveCfg = Release|Win32
 		{FAD5F27F-674E-46F7-B7BB-295EE1E0C7CB}.Release|x86.Build.0 = Release|Win32
+		{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}.Debug|x64.ActiveCfg = Debug|x64
+		{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}.Debug|x64.Build.0 = Debug|x64
+		{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}.Debug|x86.ActiveCfg = Debug|Win32
+		{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}.Debug|x86.Build.0 = Debug|Win32
+		{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}.Release|x64.ActiveCfg = Release|x64
+		{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}.Release|x64.Build.0 = Release|x64
+		{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}.Release|x86.ActiveCfg = Release|Win32
+		{E8CDFEB5-A08F-4D59-8A1B-C3C023913B09}.Release|x86.Build.0 = Release|Win32
+		{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}.Debug|x64.ActiveCfg = Debug|x64
+		{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}.Debug|x64.Build.0 = Debug|x64
+		{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}.Debug|x86.ActiveCfg = Debug|Win32
+		{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}.Debug|x86.Build.0 = Debug|Win32
+		{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}.Release|x64.ActiveCfg = Release|x64
+		{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}.Release|x64.Build.0 = Release|x64
+		{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}.Release|x86.ActiveCfg = Release|Win32
+		{1D5023E9-5D23-4699-B77E-20FAEDBB6FAF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

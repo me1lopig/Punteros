@@ -35,3 +35,11 @@ int main()
 }
 
 
+void pedir_datos()
+{
+    // funcion para introducir los datos
+
+
+
+}
+
