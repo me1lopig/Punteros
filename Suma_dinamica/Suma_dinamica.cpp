@@ -38,10 +38,12 @@ int main()
     // ejecucion de las funciones
     pedir_datos();
 
-    mostrar_matriz(puntero_matriz_1, n_filas, n_columnas);
-    mostrar_matriz(puntero_matriz_2, n_filas, n_columnas);
+
 
     suma_matrices(puntero_matriz_1, puntero_matriz_2, n_filas, n_columnas);
+
+    cout << "La suma es " << endl;
+    mostrar_matriz(puntero_matriz_1, n_filas, n_columnas);
 
     limpiar();
     parada();
@@ -106,13 +108,14 @@ void pedir_datos()
 
 void suma_matrices( int ** puntero_matriz_1, int** puntero_matriz_2, int n_filas,int n_columnas)
 {
-    cout << "La suma de las matrices es " << endl;
+    // suma de matrices
+    // el resultado se guarda en la matriz 1
 
     for (int i = 0; i < n_filas; i++)
     {
         for (int j = 0; j < n_columnas; j++)
         {
-            cout << *(*(puntero_matriz_1 + i) + j)+ *(*(puntero_matriz_2 + i) + j) << "  ";
+            *(*(puntero_matriz_1 + i) + j) += *(*(puntero_matriz_2 + i) + j);
         }
         cout << endl;
     }
