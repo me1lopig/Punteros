@@ -95,7 +95,7 @@ void transponer(int** matriz, int n_filas, int n_columnas)
 
     for (int i = 0; i < n_filas; i++)
     {
-        for (int j = i+1; j < n_columnas; j++)
+        for (int j = i+1; j < n_columnas; j++) // se pasa al siguiente elementp
         {
             if (i != j)
             {
